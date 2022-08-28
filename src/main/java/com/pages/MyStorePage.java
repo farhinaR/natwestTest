@@ -8,6 +8,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import junit.framework.Assert;
+
 public class MyStorePage {
 	
 	private WebDriver driver;
@@ -45,7 +47,45 @@ public class MyStorePage {
 		js.executeScript("arguments[0].click();", chkoutbtn);
 	}
 	
+public void Summary_checkout() throws InterruptedException {
 	
+//	WebElement element = driver.findElement(By.xpath("//a[@title='Proceed to checkout']"));
+//	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+
+		
+	driver.findElement(By.xpath("//*[@id=\"center_column\"]/p[2]/a[1]")).click();
+	
+	}
+	
+public void Address_checkout() {
+	driver.findElement(By.xpath("//*[@id=\"center_column\"]/form/p/button")).click();
+	
+}
+
+public void Shipping_checkout() {
+	driver.findElement(By.id("cgv")).click();
+	driver.findElement(By.xpath("//*[@id=\"form\"]/p/button")).click();
+
+}
+
+public void Payment_checkout() {
+	driver.findElement(By.xpath("//a[@title='Pay by check.']")).click();
+	driver.findElement(By.xpath("//*[@id=\'cart_navigation\']/button")).click();
+}
+
+public void Order_Completed() {
+	
+	
+	String str = driver.getPageSource();
+
+    if(driver.getPageSource().contains("Your order on My Store is complete.")){
+		System.out.println("Order verified");
+		}else{
+		System.out.println("Order is not verified");
+		}
+	
+}
+
 }
 	
  

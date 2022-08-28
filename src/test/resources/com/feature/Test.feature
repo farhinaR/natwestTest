@@ -17,7 +17,7 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: AutomaztionPractise
+Feature: AutomationPractice
 
   Scenario: Order T-Shirt
     Given user is on login page
@@ -29,6 +29,11 @@ Feature: AutomaztionPractise
 		And Chose List View
 		And AddTo Cart the dispayed Tshirt
 		And Proceed to Checkout
+		And User clicks on Checkout for Summary till address
+		And User clicks on Checkout for Shipping after accepting Terms
+		And User clicks on Payment and does the payment using Pay by check
+		Then User verifies Order is Completed
+		
 		
 		
 	

@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"2351529c-79f1-4c30-9da0-133d59c36466","feature":"AutomationPractice","scenario":"Order T-Shirt","start":1661718315966,"group":1,"content":"","tags":"@tag,","end":1661718365210,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"e68dbfe2-dc2b-43af-b8eb-08f8b80091bb","feature":"AutomationPractice","scenario":"Update personal information(first name) in my account","start":1661722760891,"group":1,"content":"","tags":"@tag,","end":1661722786811,"className":"passed"},{"id":"debc8e7f-08b1-4c67-a4a7-e39f8395529a","feature":"AutomationPractice","scenario":"Order T-Shirt","start":1661722703719,"group":1,"content":"","tags":"@tag,","end":1661722760877,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });

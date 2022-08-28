@@ -33,13 +33,18 @@ Feature: AutomationPractice
 		And User clicks on Checkout for Shipping after accepting Terms
 		And User clicks on Payment and does the payment using Pay by check
 		Then User verifies Order is Completed
-		
-		
-		
 	
+	Scenario: Update personal information(first name) in my account	
 		
-		
-		
+		Given user is on login page
+		When user enters username "reyazatfarhina@gmail.com"
+		And user enters password "GUDDU1coco"
+		And user clicks on Login button
+		And Validate Successfull Login
+		And Navigate to customer profile
+		Then Click on My Personal Information
+		Then User cilcks on first name and updates the first name
+		Then User saves first name
 		
 
 
